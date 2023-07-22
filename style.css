@@ -208,11 +208,13 @@ ul{
 }
 }
 #ssf{
+   margin:10px;
    font-size: 50px;
    text-decoration: underline;
 
 }
 .paragraph{
+   margin: 10px;
    font-size: 25px;
 
 
