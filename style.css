@@ -339,14 +339,15 @@ td, th {
   }
 
   .div1{
-    width: 47%;
+    width: 45%;
     float: left;
-    padding-right: 10px;
+    padding-right: 5px;
+     margin-left:10px;
 
   }
   .div2{
-    width: 47%;
+    width: 45%;
     float: left;
-    padding-left: 10px;
-
+    padding-left: 5px;
+    margin-right:10px;
   }
