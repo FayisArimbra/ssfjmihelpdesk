@@ -337,3 +337,16 @@ td, th {
     width: 60%;
     height: 80%;
   }
+
+  .div1{
+    width: 47%;
+    float: left;
+    padding-right: 10px;
+
+  }
+  .div2{
+    width: 47%;
+    float: left;
+    padding-left: 10px;
+
+  }
