@@ -296,6 +296,9 @@ td, th {
     list-style: none;
     
   }
+.breadcrumb{
+    margin-left:10px;
+}
   
   /* Display list items side by side */
   ul.breadcrumb li {
