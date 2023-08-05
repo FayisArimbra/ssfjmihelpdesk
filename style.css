@@ -376,4 +376,18 @@ td, th {
   overflow: hidden;
   background-color: #f1f1f1;
 }
+.table td{
+  padding: 0px;
+}
+.Searchbar{
+  width: 70%;
+  height: 30px;
+  margin-bottom: 8px;
+  padding-left: 10px;
+}
+#searchBar{
+    width: 35%;
+    height: 30px;
+    margin-bottom: 8px;
+}
 
