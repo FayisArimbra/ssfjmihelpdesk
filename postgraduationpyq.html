@@ -24,7 +24,7 @@
           <li>
             <a href="index.html" class="active">Home</a>
           </li>
-          <li>
+          <li> 
             <a href="aboutpage.html">About</a>
           </li>
           <li>
@@ -64,17 +64,23 @@
           </div>
 
     <div class="container">
+
       <br>
+      <div class="Searchbar">
+        <input type="text" id="searchBar"  placeholder="Search..." onkeyup="searchTables()" />
+      
+      </div>
+
       <div class="row">
         <div class="div1">
-          <table style="margin-left: 10px;" class="table">
+          <table style="margin-left: 10px;" class="table" id="myTable">
             <!--tr>
               <th>Company</th>
               <th>Contact</th>
               
             </tr-->
             
-              <tr style="background-color: #0b2239; color: white;">
+              <tr  class="header" style="background-color: #0b2239; color: white;">
                 <td style="text-align: center;" colspan="1">
                     <strong>JMI Postgraduation PYQ </strong>  
                 </td>
@@ -131,7 +137,7 @@
                      <li><a href="https://drive.google.com/file/d/11KSarYKs2of-TxV0wut2-2MJMWtH7k2K/view?usp=drive_link">MA Hindi Question Paper 2023</a></li>
                      <li><a href="https://drive.google.com/file/d/13mqB3wembgGdWt1_i_xpblRs2ey_9nps/view?usp=drive_link">MA Hindi Question Paper 2022</a></li>
                      <li><a href="https://drive.google.com/file/d/14fT2yYCTjTTm5hWDrBhl4lLKckRWPjSJ/view?usp=drive_link">MA Hindi Question Paper 2021</a></li>
-                     <li><a href="https://drive.google.com/file/d/1AsK5fSZlNoy_42QGZ-vcveS0tnCZs-gM/view?usp=drive_link">MA Hindi Question Paper 2020</a></li>
+                    <li><a href="https://drive.google.com/file/d/1AsK5fSZlNoy_42QGZ-vcveS0tnCZs-gM/view?usp=drive_link">MA Hindi Question Paper 2020</a></li>
                      <li><a href="https://drive.google.com/file/d/13nkcTX3HmBcuW0-zW_xwztVtBVZiNFC9/view?usp=drive_link">MA Hindi Question Paper 2018</a></li>
                      <li><a href="https://drive.google.com/file/d/14fTmmQTbOZq3ciblOE7M5GSWhz0NRPVP/view?usp=drive_link">MA Hindi Question Paper 2017</a></li>
                      <li><a href="https://drive.google.com/file/d/1EPCFdO0d8JMbalJ_hFrDt7-YGqZqUvDc/view?usp=drive_link">MA Hindi Question Paper 2016</a></li>
@@ -616,7 +622,7 @@
 
         </div>
         <div class="div2">
-          <table style="margin-left: 10px;" class="table">
+          <table style="margin-left: 10px;" class="table" id="my2ndTable">
             <!--tr>
               <th>Company</th>
               <th>Contact</th>
@@ -1209,6 +1215,14 @@
   <div style="height: 40px; background-color: black; text-align: center;">
     <h5 style="color: white;">Copyright 2023 All Right Reserved SSF JAMIA</h5>
   </div>
+
+ 
+ 
+
+ 
+ 
+    
+  
   <script>
     hamburger = document.querySelector(".hamburger");
     nav = document.querySelector("nav");
@@ -1232,6 +1246,36 @@
         });
       }
       </script>
+      <script>
+        function searchTables() {
+            var input, filter, table, tr, td, i, j, txtValue;
+            input = document.getElementById("searchBar");
+            filter = input.value.toUpperCase();
+
+            // Loop through all tables
+            var tables = document.getElementsByTagName("table");
+            for (i = 0; i < tables.length; i++) {
+                table = tables[i];
+                tr = table.getElementsByTagName("tr");
+
+                // Loop through all rows of the current table
+                for (j = 0; j < tr.length; j++) {
+                    td = tr[j].getElementsByTagName("td");
+                    for (var k = 0; k < td.length; k++) {
+                        if (td[k]) {
+                            txtValue = td[k].textContent || td[k].innerText;
+                            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                tr[j].style.display = "";
+                                break;
+                            } else {
+                                tr[j].style.display = "none";
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
