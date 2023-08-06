@@ -390,4 +390,30 @@ td, th {
     height: 30px;
     margin-bottom: 8px;
 }
+@media only screen and (max-width: 500px){
+   #containerID{
+      width: 500px;
+      overflow: auto; /* Enable scrollbars when content overflows */
+   }
+   #navID{
+      width: 500px;
+      overflow: auto;
+   }
+   #breadcrumbId{
+      width: 500px;
+      overflow: auto;
+   }
+    #ReservedID{
+      width: 500px;
+      overflow: auto;
+    }
+    #footerID{
+      width: 500px;
+      overflow: auto;
+    }
+    #headermainID{
+      width: 500px;
+      overflow: auto;
+    }
 
+}
