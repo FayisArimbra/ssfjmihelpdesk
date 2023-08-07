@@ -678,5 +678,38 @@ ul.breadcrumb li a:hover {
 .Goldenfiftytextimage{
     width: 60%;
 }
+.animate-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.2s, transform 1.2s;
+  }
+  
+  .animate-text.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .animate-image {
+   
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .animate-image.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .card1 {
+    
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
+  }
+  
+  .card1.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
 
 
