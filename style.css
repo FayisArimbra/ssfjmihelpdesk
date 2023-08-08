@@ -699,15 +699,15 @@ ul.breadcrumb li a:hover {
     opacity: 1;
     transform: translateY(0);
   }
-  .card1 {
+.card1 {
     
-    transform: translateX(100%);
+    transform: translateY(100%);
     opacity: 0;
-    transition: transform 1s, opacity 1s;
+    transition: transform 0.7s, opacity 0.7s;
   }
   
   .card1.active {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
   }
 
