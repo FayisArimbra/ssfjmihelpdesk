@@ -306,8 +306,10 @@ tr:nth-child(even) {
   padding-top: 50px;
 }
 @font-face {
-  font-family: "Cooper Black";
-  src: url("/fonts/cooper-black.otf");
+  font-family: 'Cooper Black';
+  src: url('path-to-your-font.woff2') format('woff2'),
+       url('path-to-your-font.woff') format('woff');
+  /* Other font properties */
 }
 
 #ssf{
