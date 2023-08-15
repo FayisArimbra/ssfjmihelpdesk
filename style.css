@@ -711,6 +711,40 @@ ul.breadcrumb li a:hover {
     transform: translateY(0);
     opacity: 1;
   }
-
+.sidetext1{
+    display: grid;
+    place-items: center;
+    opacity: .5; 
+    height: 100%;
+    width: 40%;
+    background-color: #0b2239;
+    /* bottom: 0; */
+    /* left: 0; */
+    overflow: hidden;
+}
+.sidetext2{
+  align-content: space-evenly;
+  display: grid;
+  place-items: flex-end;
+  opacity: .5;
+    height: 40%;
+    width: 100%;
+    background-color: #0b2239;
+    /* bottom: 0; */
+    /* left: 0; */
+    overflow: hidden;
+}
+@media (min-width: 600px){
+   
+  .sidetext2{
+    display: none;
+  }
+}
+@media (max-width: 600px){
+   
+  .sidetext1{
+    display: none;
+  }
+}
 
 
