@@ -539,13 +539,12 @@ ul.breadcrumb li a:hover {
     }
 }
 .imgbox{
-    height: 100vh;
+    height: 900px;
     width: 100%;
-    background-image: url(ssfjamia/frontview.webp);
+    background-image: url(jamia\jamia gate no13.jpg);
     background-size: cover;
     background-position: center;
     display: table;
-    background-attachment: fixed;
 }
 .connectwithUs{
   height:  500px;
