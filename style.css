@@ -164,6 +164,9 @@ width: 50px;
 .footer-col ul li:not(:last-child){
 margin-bottom: 10px;
 }
+.footer-col  ul li:nth-child(2) {
+            display: none;
+}
 .footer-col ul li a{
 font-size: 16px;
 
