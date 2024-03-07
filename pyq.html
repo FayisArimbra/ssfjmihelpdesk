@@ -32,6 +32,302 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 display: none;
             }
 
+
+    /*pop up style*/
+    *, *::after, *::before {
+  box-sizing: border-box;
+}
+
+* {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+  font-family: system-ui, sans-serif;
+  color: hsl(230, 7%, 23%);
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.4;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.2;
+  color: hsl(230, 13%, 9%);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5rem; /* 40px */
+}
+
+h2 {
+  font-size: 2.125rem; /* 34px */
+}
+
+h3 {
+  font-size: 1.75rem; /* 28px */
+}
+
+h4 {
+  font-size: 1.375rem; /* 22px */
+}
+
+ol, ul, menu {
+  list-style: none;
+}
+
+button, input, textarea, select {
+  background-color: transparent;
+  border-radius: 0;
+  color: inherit;
+  line-height: inherit;
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+textarea {
+  resize: vertical;
+  overflow: auto;
+  vertical-align: top;
+}
+
+a {
+  color: hsl(250, 84%, 54%);
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img, video, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* -------------------------------- 
+
+Buttons 
+
+-------------------------------- */
+
+.cd-btn {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375em;
+  font-size: 1em;
+  text-decoration: none;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: 0.2s;
+  will-change: transform;
+}
+
+.cd-btn:focus-visible {
+  outline: none;
+}
+
+.cd-btn:active {
+  transform: translateY(2px);
+}
+
+.cd-btn--primary {
+  background: hsl(129 62% 44%);
+  box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, 0.15), 
+              0 1px 3px hsla(250, 84%, 38%, 0.25), 
+              0 2px 6px hsla(250, 84%, 38%, 0.1), 
+              0 6px 10px -2px hsla(250, 84%, 38%, 0.25);
+  color: hsl(0, 0%, 100%);
+}
+
+.cd-btn--primary:hover {
+  background: hsl(129 62% 44%);
+  box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, 0.15), 
+              0 1px 2px hsla(250, 84%, 38%, 0.25), 
+              0 1px 4px hsla(250, 84%, 38%, 0.1), 
+              0 3px 6px -2px hsla(250, 84%, 38%, 0.25);
+}
+
+.cd-btn--primary:focus-visible {
+  box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, 0.15), 
+              0 1px 2px hsla(250, 84%, 38%, 0.25), 
+              0 1px 4px hsla(250, 84%, 38%, 0.1), 
+              0 3px 6px -2px hsla(250, 84%, 38%, 0.25), 
+              0 0 0 2px hsl(0, 0%, 100%), 
+              0 0 0 4px hsl(129 62% 44%);
+}
+
+.cd-btn--subtle {
+  background: hsl(0, 0%, 100%);
+  color: hsl(230, 13%, 9%);
+  box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, 0.1), 
+              0 0 0 1px hsla(230, 13%, 9%, 0.02), 
+              0 0.3px 0.4px hsla(230, 13%, 9%, 0.025),
+              0 1px 3px -1px hsla(230, 13%, 9%, 0.2), 
+              0 3.5px 6px hsla(230, 13%, 9%, 0.12);
+}
+
+.cd-btn--subtle:hover {
+  background: hsl(0, 0%, 100%);
+  box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, 0.1), 
+              0 0 0 1px hsla(230, 13%, 9%, 0.02), 
+              0 0.1px 0.3px hsla(230, 13%, 9%, 0.06),
+              0 1px 2px hsla(230, 13%, 9%, 0.12),
+              0 1px 3px -1px hsla(230, 13%, 9%, 0.2);
+}
+
+.cd-btn--subtle:focus-visible {
+  box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, 0.1), 
+              0 0 0 1px hsla(230, 13%, 9%, 0.02), 
+              0 0.3px 0.4px hsla(230, 13%, 9%, 0.025),
+              0 1px 3px -1px hsla(230, 13%, 9%, 0.2), 
+              0 3.5px 6px hsla(230, 13%, 9%, 0.12), 
+              0 0 0 2px hsl(0, 0%, 100%), 
+              0 0 0 4px hsl(230, 7%, 23%);
+}
+
+.cd-btn--accent {
+  background: rgb(37, 211, 102);
+  color: hsl(0, 0%, 100%);
+  box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, 0.15), 
+              0 1px 3px hsla(342, 89%, 38%, 0.25), 
+              0 2px 6px hsla(342, 89%, 38%, 0.1), 
+              0 6px 10px -2px hsla(342, 89%, 38%, 0.25);
+}
+
+.cd-btn--accent:hover {
+  background: rgb(37, 211, 102);
+  box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, 0.15), 
+              0 1px 2px hsla(342, 89%, 38%, 0.25), 
+              0 1px 4px hsla(342, 89%, 38%, 0.1), 
+              0 3px 6px -2px hsla(342, 89%, 38%, 0.1);
+}
+
+.cd-btn--accent:focus-visible {
+  box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, 0.15), 
+              0 1px 2px hsla(342, 89%, 38%, 0.25), 
+              0 1px 4px hsla(342, 89%, 38%, 0.1), 
+              0 3px 6px -2px hsla(342, 89%, 38%, 0.1), 
+              0 0 0 2px hsl(0, 0%, 100%), 
+              0 0 0 4px rgb(37, 211, 102);
+}
+
+.cd-btn--disabled, .cd-btn[disabled], .cd-btn[readonly] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* -------------------------------- 
+
+Component 
+
+-------------------------------- */
+
+.dialog {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 15;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dialog__content {
+  width: calc(100% - 3rem);
+  max-width: 32rem;
+  overflow: auto;
+  padding: 1.5rem;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 0 0 1px hsla(230, 13%, 9%, 0.05),
+              0 1.2px 1.9px -1px hsla(230, 13%, 9%, 0.01),
+              0 3px 5px -1px hsla(230, 13%, 9%, 0.015),
+              0 8px 15px -1px hsla(230, 13%, 9%, 0.05),
+              0 28px 40px -1px hsla(230, 13%, 9%, 0.1);
+  border-radius: 0.75em;
+}
+
+.dialog__title {
+  color: hsl(230, 13%, 9%);
+  font-size: 1.375rem;
+  margin-bottom: 0.75rem;
+}
+
+.dialog__description {
+  color: hsl(225, 4%, 47%);
+  font-size: 0.9375rem;
+}
+
+.dialog__footer {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: end;
+}
+
+.dialog--is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dialog--sticky {
+  align-items: flex-start;
+}
+
+.dialog--sticky .dialog__content {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.dialog[data-animation=on] {
+  transition: opacity 0.3s, visibility 0s 0.3s;
+  perspective: 800px;
+}
+.dialog[data-animation=on] .dialog__content {
+  will-change: transform;
+  transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translateY(10%);
+}
+
+.dialog[data-animation=on].dialog--is-visible {
+  transition: opacity 0.3s;
+}
+
+.dialog[data-animation=on].dialog--is-visible .dialog__content {
+  transform: translateY(0);
+}
+
+.dialog[data-animation=on].dialog--sticky .dialog__content {
+  transform: translateY(-100%);
+}
+
+.dialog[data-animation=on].dialog--sticky.dialog--is-visible {
+  transition: none;
+}
+
+.dialog[data-animation=on].dialog--sticky.dialog--is-visible .dialog__content {
+  transform: translateY(0);
+}
+    /*pop up*/
+
     </style>
 </head>
 <body>
@@ -179,6 +475,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div style="width: 60px; height: 60px; position: fixed;right: 20px;bottom: 20px;" >
         <a href="https://chat.whatsapp.com/Ih1wyY22y6bFi0YTYvJrdz"><img src="ssfjamia/WhatsApp.svg.webp" alt="" style="width: 60px;height: 60px;"></a>
      </div>
+   
+     <!---start-pop up -->
+     <div>
+        <button class="cd-btn cd-btn--primary" aria-controls="dialog-1">Join WhatsApp</button>
+        </div> 
+      
+        <div id="dialog-1" class="dialog js-dialog" data-animation="on">
+          <div class="dialog__content" role="alertdialog" aria-labelledby="dialog-title-1" aria-describedby="dialog-description-1">
+            <h4 id="dialog-title-1" class="dialog__title"> join Our SSF JMI Helpdesk WhatsApp group</h4>
+        
+            <p id="dialog-description-1" class="dialog__description"></p>
+        
+            <footer class="dialog__footer">
+              <button class="cd-btn cd-btn--subtle js-dialog__close">Cancel</button>
+             <a href="https://chat.whatsapp.com/Ih1wyY22y6bFi0YTYvJrdz"><button class="cd-btn cd-btn--accent">WhatsApp</button></a>
+            </footer>
+          </div>
+        </div>
+      <!---end-pop up -->
+
 
     <footer class="footer">
       <div class="container">
@@ -229,12 +545,188 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    <div style="height: 40px; background-color: black; text-align: center;">
      <h5  style="color: white;">Copyright 2024 All Rights Reserved SSF JMI</h5>
     </div>
- <script>
+ 
+   <script>
      hamburger = document.querySelector(".hamburger");
      nav = document.querySelector("nav");
      hamburger.onclick = function() {
          nav.classList.toggle("active");
      }
+ </script>
+
+  <script>
+
+     //pop-up script start here
+
+     (function() {
+  var Dialog = function(element) {
+    this.element = element;
+    this.triggers = document.querySelectorAll('[aria-controls="'+this.element.getAttribute('id')+'"]');
+    this.firstFocusable = null;
+		this.lastFocusable = null;
+		this.selectedTrigger = null;
+		this.showClass = "dialog--is-visible";
+		this.binding = false;
+    initDialog(this);
+  };
+
+  document.addEventListener("DOMContentLoaded", function() {
+  var dialogElement = document.getElementById('dialog-1'); // Change the ID if necessary
+  if (dialogElement) {
+    var openEvent = new CustomEvent('openDialog', { detail: null });
+    dialogElement.dispatchEvent(openEvent);
+  }
+});
+
+
+  function initDialog(dialog) {
+    if ( dialog.triggers ) {
+			for(var i = 0; i < dialog.triggers.length; i++) {
+				dialog.triggers[i].addEventListener('click', function(event) {
+					event.preventDefault();
+					dialog.selectedTrigger = event.target;
+					showDialog(dialog);
+					initDialogEvents(dialog);
+				});
+			}
+    }
+    
+    // listen to the openDialog event -> open dialog without a trigger button
+		dialog.element.addEventListener('openDialog', function(event){
+			if(event.detail) self.selectedTrigger = event.detail;
+			showDialog(dialog);
+			initDialogEvents(dialog);
+		});
+
+		// listen to the closeDialog event -> close dialog without a trigger button
+		dialog.element.addEventListener('closeDialog', function(event){
+			if(event.detail) self.selectedTrigger = event.detail;
+			closeDialog(dialog);
+		});
+  };
+
+  function showDialog(dialog) {
+		dialog.element.classList.add(dialog.showClass);
+    getFocusableElements(dialog);
+		dialog.firstFocusable.focus();
+		// wait for the end of transitions before moving focus
+		dialog.element.addEventListener("transitionend", function cb(event) {
+			dialog.firstFocusable.focus();
+			dialog.element.removeEventListener("transitionend", cb);
+		});
+		emitDialogEvents(dialog, 'dialogIsOpen');
+  };
+
+  function closeDialog(dialog) {
+		dialog.element.classList.remove(dialog.showClass);
+		dialog.firstFocusable = null;
+		dialog.lastFocusable = null;
+		if(dialog.selectedTrigger) dialog.selectedTrigger.focus();
+		//remove listeners
+		cancelDialogEvents(dialog);
+		emitDialogEvents(dialog, 'dialogIsClose');
+  };
+  
+  function initDialogEvents(dialog) {
+    //add event listeners
+		dialog.binding = handleEvent.bind(dialog);
+		dialog.element.addEventListener('keydown', dialog.binding);
+		dialog.element.addEventListener('click', dialog.binding);
+  };
+
+  function cancelDialogEvents(dialog) {
+		//remove event listeners
+		dialog.element.removeEventListener('keydown', dialog.binding);
+		dialog.element.removeEventListener('click', dialog.binding);
+  };
+  
+  function handleEvent(event) {
+		// handle events
+		switch(event.type) {
+      case 'click': {
+        initClick(this, event);
+      }
+      case 'keydown': {
+        initKeyDown(this, event);
+      }
+		}
+  };
+  
+  function initKeyDown(dialog, event) {
+		if( event.keyCode && event.keyCode == 27 || event.key && event.key == 'Escape' ) {
+			//close dialog on esc
+			closeDialog(dialog);
+		} else if( event.keyCode && event.keyCode == 9 || event.key && event.key == 'Tab' ) {
+			//trap focus inside dialog
+			trapFocus(dialog, event);
+		}
+	};
+
+	function initClick(dialog, event) {
+		//close dialog when clicking on close button
+		if( !event.target.closest('.js-dialog__close') ) return;
+		event.preventDefault();
+		closeDialog(dialog);
+	};
+
+	function trapFocus(dialog, event) {
+		if( dialog.firstFocusable == document.activeElement && event.shiftKey) {
+			//on Shift+Tab -> focus last focusable element when focus moves out of dialog
+			event.preventDefault();
+			dialog.lastFocusable.focus();
+		}
+		if( dialog.lastFocusable == document.activeElement && !event.shiftKey) {
+			//on Tab -> focus first focusable element when focus moves out of dialog
+			event.preventDefault();
+			dialog.firstFocusable.focus();
+		}
+	};
+
+  function getFocusableElements(dialog) {
+    //get all focusable elements inside the dialog
+		var allFocusable = dialog.element.querySelectorAll('[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex]:not([tabindex="-1"]), [contenteditable], audio[controls], video[controls], summary');
+		getFirstVisible(dialog, allFocusable);
+		getLastVisible(dialog, allFocusable);
+  };
+
+  function getFirstVisible(dialog, elements) {
+    //get first visible focusable element inside the dialog
+		for(var i = 0; i < elements.length; i++) {
+			if( elements[i].offsetWidth || elements[i].offsetHeight || elements[i].getClientRects().length ) {
+				dialog.firstFocusable = elements[i];
+				return true;
+			}
+		}
+  };
+
+  function getLastVisible(dialog, elements) {
+    //get last visible focusable element inside the dialog
+		for(var i = elements.length - 1; i >= 0; i--) {
+			if( elements[i].offsetWidth || elements[i].offsetHeight || elements[i].getClientRects().length ) {
+				dialog.lastFocusable = elements[i];
+				return true;
+			}
+		}
+  };
+
+  function emitDialogEvents(dialog, eventName) {
+    var event = new CustomEvent(eventName, {detail: dialog.selectedTrigger});
+		dialog.element.dispatchEvent(event);
+  };
+
+  //initialize the Dialog objects
+	var dialogs = document.getElementsByClassName('js-dialog');
+	if( dialogs.length > 0 ) {
+		for( var i = 0; i < dialogs.length; i++) {
+			(function(i){new Dialog(dialogs[i]);})(i);
+		}
+	}
+}());
+   
+     //pop-up script end here
+
+
+
  </script>
   
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
