@@ -751,23 +751,5 @@ ul.breadcrumb li a:hover {
 }
 
 
-<!--extra added 24/5/2025--->
 
-<style>
-  .table-container {
-    overflow-x: auto;
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-
-  th, td {
-    word-wrap: break-word;
-    padding: 8px;
-  }
-</style>
-
-<!--extra added 24/5/2025--->
 
