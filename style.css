@@ -584,12 +584,15 @@ ul.breadcrumb li a:hover {
     }
 }
 
-.head-text1{
-     font-family: "Cooper Black";
-     font-weight: bold;
-     font-size: 42px;
-     color: white;
+@font-face {
+    font-family: 'CooperBlack';
+    src: url('COOPBL.woff') format('woff');
+}
 
+.head-text1 {
+    font-family: 'CooperBlack', serif;
+    font-size: 42px;
+    color: white;
 }
 @media(max-width: 650px){
   .head-text1{
