@@ -586,7 +586,7 @@ ul.breadcrumb li a:hover {
 
 @font-face {
     font-family: 'CooperBlack';
-    src: url('COOPBL.woff') format('woff');
+    src: url('COOPBL.woff2') format('woff2');
 }
 
 .head-text1 {
